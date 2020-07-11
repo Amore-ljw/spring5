@@ -1,0 +1,4 @@
+logging:
+  level:
+    org.springframework.core.env: warn
+    org.springframework.jndi: warn
