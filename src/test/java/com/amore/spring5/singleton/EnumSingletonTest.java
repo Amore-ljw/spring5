@@ -22,7 +22,6 @@ public class EnumSingletonTest {
         } catch (Exception e) {
             e.printStackTrace();
         }
-//        ============================================
 
         //测试反序列化创建枚举实例
         try {
