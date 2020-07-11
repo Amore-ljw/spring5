@@ -10,18 +10,18 @@ public class EnumSingletonTest {
     public static void main(String[] args) {
         //测试反射实例化枚举类
         EnumSingleton instance = EnumSingleton.INSTANCE;
-//        System.out.println(instance.name() + " : " + instance.ordinal());
-//        try {
-//            Class<EnumSingleton> clazz = EnumSingleton.class;
-//            Constructor<EnumSingleton> constructor = clazz.getDeclaredConstructor(String.class,int.class);
-//            constructor.setAccessible(true);
-//            EnumSingleton newInstance = constructor.newInstance();
-//            //Constructor -> newInstance(...) -> if ((clazz.getModifiers() & Modifier.ENUM) != 0)
-//            //throw new IllegalArgumentException("Cannot reflectively create enum objects");
-//            System.out.println(instance == newInstance);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
+        System.out.println(instance.name() + " : " + instance.ordinal());
+        try {
+            Class<EnumSingleton> clazz = EnumSingleton.class;
+            Constructor<EnumSingleton> constructor = clazz.getDeclaredConstructor(String.class,int.class);
+            constructor.setAccessible(true);
+            EnumSingleton newInstance = constructor.newInstance();
+            //Constructor -> newInstance(...) -> if ((clazz.getModifiers() & Modifier.ENUM) != 0)
+            //throw new IllegalArgumentException("Cannot reflectively create enum objects");
+            System.out.println(instance == newInstance);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         //测试反序列化创建枚举实例
         try {
