@@ -1,4 +1,3 @@
-##初始化的三种方式
 Quick setup — if you’ve done this kind of thing before
 or	
 HTTPS
