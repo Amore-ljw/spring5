@@ -1,3 +1,4 @@
+##初始化的三种方式
 Quick setup — if you’ve done this kind of thing before
 or	
 HTTPS
@@ -19,3 +20,5 @@ git push -u origin master
 …or import code from another repository
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 
+* 说明
+代码包含了七大设计原则
